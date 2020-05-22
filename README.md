@@ -1,4 +1,3 @@
-# routertracert
 # Traceroute
 
 Get tracroute info by command line interface
@@ -9,7 +8,7 @@ Download File:
 
 clone the file to local
 
-``
+`https://github.com/klauswong123/routertracert.git`
 
 
 **1. Prerequisite**
@@ -55,28 +54,31 @@ pip3 install requests
 **3. Run Program**
 
 Type 'python3 traceroute -help' to get the help interface like following:
+```
 
-            "Usage: python3 traceroute.py [-o output-file] [-ia] [-is] target-name(>=1)" 
+Usage: python3 traceroute.py [-o output-file] [-ia] [-is] target-name(>=1)
                 
-            "Options:" 
+Options:" 
                 
-            "    -o output-file                Default: $host-name-$date.json. Only Json file is available." 
+    -o output-file                Default: $host-name-$date.json. Only Json file is available.
             
-            "    -ia                           Ignore AS number: Don't show AS number in the output file" 
-            
-            "    -is                           Ignore ServiceProvider: Don't show service provider" 
+    -ia                           Ignore AS number: Don't show AS number in the output file
+           
+    -is                           Ignore ServiceProvider: Don't show service provider
+               
+    -help                         show help interface
                 
-            "    -help                         show help interface" 
+    target-name                   IP address or domain name. Available for multiple input
                 
-            "    target-name                   IP address or domain name. Available for multiple input"
-                
-            "Example: python3 traceroute.py -o this-machine.json -ia -is 111.111.111.111 127.0.0.1" 
+"Example: python3 traceroute.py -o this-machine.json -ia -is 111.111.111.111 127.0.0.1" 
                 
 
 Input the ip and args you want to traceroute, and wait a minute to finish.
 
+```
 
 **4. Output**
+
 
 File Output: 
 
